@@ -53,7 +53,8 @@ public class GameScene extends JPanel implements KeyListener {
             while (player.inBounds(player)&&!isFlag()) {
                 int second = time % 60;
                 int minute = time / 60;
-                score=(int)(time/2.1);
+                score=time/2
+;
                 String time1=minute+":"+second;
                 title.setText("time: "+time1);
                 record.setText("score: " +score);
